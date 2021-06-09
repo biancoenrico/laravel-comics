@@ -23,3 +23,24 @@ Route::get('/', function () {
     
     return view('home' , $data);
 });
+
+Route::get('/prod_info/{id}', function ($id) {
+    $comics_array = config('comics');
+    $single = [];
+
+    foreach($comics_array as $item){
+        if($item['id'] === (int)$id){
+            $single = $item;
+        }
+    }
+    
+    if(empty($single)){
+        abort('404');
+    }
+
+    $data = [
+        'single' => $single
+    ];
+
+    return view('prod_info', $data);
+})->name('product');

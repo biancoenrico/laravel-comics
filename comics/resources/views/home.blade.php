@@ -10,7 +10,7 @@
             @foreach ($comics_array as $item)
                 <div class="comics">
                     <div class="thumb">
-                        <a href="#">
+                        <a href="{{ route('product',['id' => $item['id']]) }}">
                             <img src="{{ $item['thumb'] }}" alt="">
                         </a> 
                         <br>
