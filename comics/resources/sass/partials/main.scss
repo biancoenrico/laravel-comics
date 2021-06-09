@@ -1,0 +1,68 @@
+main{
+    background-color: $page_secondary_color;
+    .container{
+        position: relative;
+        .current{
+            padding: 15px 25px;
+            background-color: $page_primary_color;
+            color: whitesmoke;
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            font-size: 25px;
+        }
+        padding: 50px 0;
+        .flex{
+            flex-wrap: wrap;
+            align-items:flex-start;
+            .comics{
+                width: calc(100% / 6);
+                .thumb{
+                    display: block;
+                    list-style-type: none;
+                    margin: 10px;
+                    span{
+                        color: whitesmoke;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+            
+        }
+        .more{
+            padding: 15px 25px;
+            border-radius: 5px;
+            background-color: $page_primary_color;
+            color: whitesmoke;
+            margin: auto;
+            margin-top: 50px;
+        }
+    }
+    .merch{
+        background-color: $page_primary_color;
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px 0;
+            width: 80%;
+            margin: auto;
+            li{
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                    color: whitesmoke;
+                }
+                span{
+                    margin-left: 20px;
+                }
+                .fas,.fab{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+   
+}
