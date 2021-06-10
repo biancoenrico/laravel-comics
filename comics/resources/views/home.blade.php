@@ -1,6 +1,10 @@
 
 @extends('layouts.app')
 
+@section('main-content')
+    main-background-product
+@endsection
+
 @section('main')
     <div class="container">
         <div class="current">

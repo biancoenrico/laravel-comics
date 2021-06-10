@@ -1,7 +1,8 @@
-main{
+main.main-background-product{
     background-color: $page_secondary_color;
     .container{
         position: relative;
+        padding: 50px 0;
         .current{
             padding: 15px 25px;
             background-color: $page_primary_color;
@@ -11,7 +12,6 @@ main{
             left: -30px;
             font-size: 25px;
         }
-        padding: 50px 0;
         .flex{
             flex-wrap: wrap;
             align-items:flex-start;
@@ -38,31 +38,126 @@ main{
             margin: auto;
             margin-top: 50px;
         }
-    }
-    .merch{
-        background-color: $page_primary_color;
+    }  
+}
+
+.merch{
+    background-color: $page_primary_color;
+    &.bottom{
+        background-color: $info_color_1;
+        border: 1px solid lightgray;
+        span,.fas,.fab{
+            color: lightgray;
+        }
         ul{
-            list-style-type: none;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 50px 0;
-            width: 80%;
-            margin: auto;
             li{
-                display: inline-block;
-                a{
-                    text-decoration: none;
-                    color: whitesmoke;
-                }
-                span{
-                    margin-left: 20px;
-                }
-                .fas,.fab{
-                    font-size: 50px;
-                }
+                border: 1px solid lightgray;
+                width: 25%;
+                height: 100%;
+                padding: 20px;
             }
         }
     }
-   
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px 0;
+        width: 80%;
+        margin: auto;
+        li{
+            display: inline-block;
+            padding: 50px 0;
+            a,a.flex{
+                text-decoration: none;
+                color: whitesmoke;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+            }
+            span{
+                margin-left: 20px;
+            }
+            .fas,.fab{
+                font-size: 50px;
+            }
+        }
+    }
+}
+.main-background-product{
+    background-color: white;
+}
+.blue{
+    background-color: $page_primary_color;
+    height: 100px;
+}
+.container-main{
+    margin-top: 50px;
+    position: relative;
+    .thumb_img{
+        position: absolute;
+        top: -380px;;
+        left: -30px;
+        font-size: 25px;
+    }
+    h2{
+        margin: 20px 0;
+    }
+    .green{
+        background-color: $info_color_2;
+        width: 70%;
+        .flex{
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 0 10px;
+            color: white;
+            
+            .price{
+                width: 60%;
+                margin: 15px 0;
+            }
+            .available{
+                margin: 15px 0;
+            }
+        }
+    }
+    .description{
+        width: 70%;
+        margin-bottom: 50px;
+    }
+}
+.info{
+    display: flex;
+    background-color: $info_color_1;
+    padding-bottom: 100px;
+    .talent{
+        width: 50%;
+        padding-right: 20px;
+    }
+    .specs{
+        width: 50%;
+        padding-left: 20px;
+
+    }
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .cont{
+        display: inline-block;
+        width: 60%;
+        text-align: right;
+        margin: 10px;
+        li{
+            display: inline-block;
+        }
+    }
+}
+
+.specs{
+    .row{
+        width: 50%;
+    }
 }
