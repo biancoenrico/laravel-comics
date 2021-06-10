@@ -220,6 +220,9 @@ main.main-background-product .container .more {
   left: -30px;
   font-size: 25px;
 }
+.container-main .thumb_img img {
+  border: 2px solid white;
+}
 .container-main h2 {
   margin: 20px 0;
 }
